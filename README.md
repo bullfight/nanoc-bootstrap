@@ -1,9 +1,5 @@
-nanoc-bootstrap
-===============
+# Nanoc Bootstrap Project
 
-
-This project provides an starting point for integrating nanoc with HAML, SASS, Compass and jQuery.
-
+Contains a very basic nanoc3 project that uses Haml for markup and Compass/Sass for style
 
 Use `$ bundle install` to fetch all dependencies.
-
