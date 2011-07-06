@@ -4,7 +4,7 @@ Compass.add_project_configuration 'config/compass.config'
 
 compile '/stylesheets/*/' do
   case item[:extension]
-  when /sass$/, /scss$/: filter :sass, Compass.sass_engine_options
+  when /sass$/, /scss$/ then filter :sass, Compass.sass_engine_options
   else nil
   end
 end
@@ -28,9 +28,9 @@ end
 
 compile '*' do
   case item[:extension]
-  when /haml$/: filter :haml
-  when /markdown$/, /md$/: filter :kramdown
-  when /erb$/: filter :erb
+  when /haml$/ then filter :haml
+  when /markdown$/, /md$/ then filter :kramdown
+  when /erb$/ then filter :erb
   end
    filter :colorize_syntax
    layout 'default'
